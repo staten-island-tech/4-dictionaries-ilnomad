@@ -1,17 +1,15 @@
-def englishorfrench():
-    x=input("Type your sentence here. ")
-    y=x.split()
+def englishorfrench(x):
     s=0
     t=0
-
-    for y in y:
-        if y==("s","S"):
+    for char in x:
+        if char==("s" or "S"):
             s=s+1
-        elif y==("t","T"):
+        elif char==("t" or "T"):
             t=t+1
-    if s>=t:
-        print("French")
-    elif t>s:
+    print(t,s)
+    if t>s:
         print("English")
+    else:
+        print("French")
 
-englishorfrench()
+englishorfrench("estimated")
