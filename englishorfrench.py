@@ -6,10 +6,9 @@ def englishorfrench(x):
             s=s+1
         elif char==("t" or "T"):
             t=t+1
-    print(t,s)
     if t>s:
         print("English")
     else:
         print("French")
 
-englishorfrench("estimated")
+englishorfrench("st")
