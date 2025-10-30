@@ -11,4 +11,4 @@ def englishorfrench(x):
     else:
         print("French")
 
-englishorfrench("st")
+englishorfrench("estimated")
