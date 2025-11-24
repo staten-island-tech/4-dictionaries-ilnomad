@@ -22,7 +22,7 @@ steamshop={
 }
 def buysteamshop():
     cart=[]
-    cart2=[]
+    cart2=0
     ContinueShopping=True
     x=input("Would you like to buy a game? 'Yes.' or 'No.' ")
     while x==("Yes."):
@@ -31,7 +31,7 @@ def buysteamshop():
                 print(steamshop[h]["name"])
             b=input("What game would you like to buy? ")
             cart.append(b)
-            cart2.append(steamshop[b]["Price"])
+            cart2+=steamshop[b]["Price"]
             y=input("Would you like to buy another game? 'Yes.' or 'No.' ")
             if y=="Yes.":
                 ContinueShopping=True
@@ -43,7 +43,6 @@ def buysteamshop():
                     ContinueShopping=True
                 elif z==("View my cart."):
                     print(cart)
-                    cart3=float(sum(cart2))
-                    print(f"${cart3}") 
+                    print(f"${cart2}") 
 buysteamshop()
 
